@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8E7E5;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+
+.text-muted {
+    color: #ddd;
+}
+
+.container {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 2.5% 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.profile {
+    background-color: #5DA4DA;
+    width: 32%;
+    padding-bottom: 5%;
+    box-shadow: 0 0 3px 0 #333;
+}
+
+.profile .title-info {
+    background: url('./images/profile_pic1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    padding-top: 55%;
+    padding-left: 20%;
+    color: #fff;
+    text-shadow: -1px 1px 1px #333;
+    position: relative;
+}
+
+.profile .title-info .icon {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    padding: 7px 10px;
+    background-color: #5DA4DA;
+}
+
+.profile .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7.5%;
+    color: white;
+}
+
+.profile .info .icon {
+    width: 19%;
+    padding-top: 1.2%;
+    text-align: center;
+}
+
+.profile .info .icon i {
+    font-size: 1.5em;
+}
+
+.profile .info .detail {
+    width: 80%;
+    padding-bottom: 12.5%;
+    font-size: 0.95em;
+    line-height: 1.4rem;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.75);
+}
+
+.profile .info .detail.contact p:first-child{
+    margin-bottom: 15px;
+}
+
+.profile .info .detail.contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile .info .detail.skills {
+    border-bottom: none;
+}
+
+.profile .info .detail.skills h3 {
+    margin-bottom: 5.5%;
+}
+
+.profile .info .detail.skills div {
+    margin-bottom: 5%;
+}
+
+.profile .info .detail.skills label {
+    font-weight: bold;
+}
+
+/* Input Slider */
+
+.profile .info .detail.skills input {
+    -webkit-appearance: none;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+    background-color: #ddd;
+}
+
+/* Special styling for WebKit/Blink */
+.profile .info .detail.skills input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  /* margin-top: -14px; */
+}
+
+/* All the same stuff for Firefox */
+.profile .info .detail.skills input::-moz-range-thumb {
+  height: 10px;
+  border: none;
+  width: 10px;
+  border-radius: 100%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+/* All the same stuff for IE */
+.profile .info .detail.skills input::-ms-thumb {
+  height: 10px;
+  border: none;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+.extra-info {
+    width: 66%;
+}
+
+.extra-info > div {
+    box-shadow: 0 0 5px -2px #333;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
+    color: #77726F;
+    margin-bottom: 5%;
+}
+
+.extra-info > div:last-child {
+    margin-bottom: 0;
+}
+
+.extra-info > div .icon {
+    width: 10%;
+    height: 100%;
+    font-size: 2.25em;
+    text-align: right;
+}
+
+.extra-info > div .detail {
+    width: 85%;
+}
+
+.extra-info > div .detail h2 {
+    margin-bottom: 4.5%;
+}
+
+.extra-info > div .detail > div {
+    border-bottom: 1px solid #333;
+    padding: 5% 0;
+}
+
+.extra-info > div .detail > div:last-child {
+    border-bottom: none;
+    padding-top: 5%;
+}
+
+.extra-info > div .detail h3 {
+    font-size: 1.2em;
+    margin-bottom: 1.2%;
+}
+
+.extra-info > div .detail div div {
+    color: #5DA4DA;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 2.5%;
+}
+
+.extra-info > div .detail div p {
+    font-size: 0.9em;
+}
+
+.extra-info > div .detail.interests div {
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    color: #5DA4DA;
+}
+
+.extra-info > div .detail.interests div i {
+    font-size: 2.5em;
+}
+
+.extra-info > div.links {
+    justify-content: center;
+}
+
+.extra-info > div.links a {
+    color: #5DA4DA;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.extra-info > div.links a:first-child {
+    margin-right: 25px;
+}
